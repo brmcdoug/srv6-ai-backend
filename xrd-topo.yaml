@@ -110,12 +110,12 @@ topology:
     - endpoints: ["SP04:Gi0-0-0-3", "LF08:Gi0-0-0-1"]
 
   # SP05
-    - endpoints: ["SP05:Gi0-0-0-2", "LF09:Gi0-0-0-2"]
-    - endpoints: ["SP05:Gi0-0-0-3", "LF10:Gi0-0-0-2"]
+    - endpoints: ["SP05:Gi0-0-0-2", "LF09:Gi0-0-0-0"]
+    - endpoints: ["SP05:Gi0-0-0-3", "LF10:Gi0-0-0-0"]
 
   # SP06
-    - endpoints: ["SP06:Gi0-0-0-2", "LF09:Gi0-0-0-3"]
-    - endpoints: ["SP06:Gi0-0-0-3", "LF10:Gi0-0-0-3"]
+    - endpoints: ["SP06:Gi0-0-0-2", "LF09:Gi0-0-0-1"]
+    - endpoints: ["SP06:Gi0-0-0-3", "LF10:Gi0-0-0-1"]
 
   # LF07
     - endpoints: ["LF07:Gi0-0-0-2", "LF07-host:LF07-Gi0-0-0-2"]
