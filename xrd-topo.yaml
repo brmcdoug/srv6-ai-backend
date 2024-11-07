@@ -74,28 +74,16 @@ topology:
       mgmt-ipv4: 172.20.9.20
       startup-config: xrd-config/LF10.cfg
 
-    LF07-host1:
+    LF07-host:
       kind: bridge
 
-    LF07-host2:
+    LF08-host:
       kind: bridge
 
-    LF08-host1:
+    LF09-host:
       kind: bridge
 
-    LF08-host2:
-      kind: bridge
-
-    LF09-host1:
-      kind: bridge
-
-    LF09-host2:
-      kind: bridge
-
-    LF10-host1:
-      kind: bridge
-
-    LF10-host2:
+    LF10-host:
       kind: bridge
 
   links:
@@ -116,41 +104,28 @@ topology:
 
     - endpoints: ["SP03:Gi0-0-0-2", "LF07:Gi0-0-0-0"]
     - endpoints: ["SP03:Gi0-0-0-3", "LF08:Gi0-0-0-0"]
-    - endpoints: ["SP03:Gi0-0-0-4", "LF09:Gi0-0-0-0"]
-    - endpoints: ["SP03:Gi0-0-0-5", "LF10:Gi0-0-0-0"]
 
   # SP04
     - endpoints: ["SP04:Gi0-0-0-2", "LF07:Gi0-0-0-1"]
     - endpoints: ["SP04:Gi0-0-0-3", "LF08:Gi0-0-0-1"]
-    - endpoints: ["SP04:Gi0-0-0-4", "LF09:Gi0-0-0-1"]
-    - endpoints: ["SP04:Gi0-0-0-5", "LF10:Gi0-0-0-1"]
 
   # SP05
-    - endpoints: ["SP05:Gi0-0-0-2", "LF07:Gi0-0-0-2"]
-    - endpoints: ["SP05:Gi0-0-0-3", "LF08:Gi0-0-0-2"]
-    - endpoints: ["SP05:Gi0-0-0-4", "LF09:Gi0-0-0-2"]
-    - endpoints: ["SP05:Gi0-0-0-5", "LF10:Gi0-0-0-2"]
+    - endpoints: ["SP05:Gi0-0-0-2", "LF09:Gi0-0-0-2"]
+    - endpoints: ["SP05:Gi0-0-0-3", "LF10:Gi0-0-0-2"]
 
   # SP06
-    - endpoints: ["SP06:Gi0-0-0-2", "LF07:Gi0-0-0-3"]
-    - endpoints: ["SP06:Gi0-0-0-3", "LF08:Gi0-0-0-3"]
-    - endpoints: ["SP06:Gi0-0-0-4", "LF09:Gi0-0-0-3"]
-    - endpoints: ["SP06:Gi0-0-0-5", "LF10:Gi0-0-0-3"]
+    - endpoints: ["SP06:Gi0-0-0-2", "LF09:Gi0-0-0-3"]
+    - endpoints: ["SP06:Gi0-0-0-3", "LF10:Gi0-0-0-3"]
 
   # LF07
-    - endpoints: ["LF07:Gi0-0-0-4", "LF07-host1:LF07-Gi0-0-0-4"]
-    - endpoints: ["LF07:Gi0-0-0-5", "LF07-host2:LF07-Gi0-0-0-5"]
-
+    - endpoints: ["LF07:Gi0-0-0-2", "LF07-host:LF07-Gi0-0-0-2"]
 
   # LF08
-    - endpoints: ["LF08:Gi0-0-0-4", "LF08-host1:LF08-Gi0-0-0-4"]
-    - endpoints: ["LF08:Gi0-0-0-5", "LF08-host2:LF08-Gi0-0-0-5"]
+    - endpoints: ["LF08:Gi0-0-0-2", "LF08-host:LF08-Gi0-0-0-2"]
 
   # LF09
-    - endpoints: ["LF09:Gi0-0-0-4", "LF09-host1:LF09-Gi0-0-0-4"]
-    - endpoints: ["LF09:Gi0-0-0-5", "LF09-host2:LF09-Gi0-0-0-5"]  
+    - endpoints: ["LF09:Gi0-0-0-2", "LF09-host:LF09-Gi0-0-0-2"]
 
   # LF10
-    - endpoints: ["LF10:Gi0-0-0-4", "LF10-host1:LF10-Gi0-0-0-4"]
-    - endpoints: ["LF10:Gi0-0-0-5", "LF10-host2:LF10-Gi0-0-0-5"]
+    - endpoints: ["LF10:Gi0-0-0-2", "LF10-host:LF10-Gi0-0-0-2"]
 
