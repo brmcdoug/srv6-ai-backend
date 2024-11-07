@@ -1,7 +1,7 @@
 #   This yml launches the SS and brick-0 portions of the clos topology
 #   Bricks 1, 2, and 3 are launched via the clos-lower.yml
 
-name: clos
+name: xrd-clos
 
 mgmt:
   network: mgt_xrd
