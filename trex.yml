@@ -9,14 +9,14 @@ topology:
 
     ubtrex01:
       kind: linux
-      image: ubuntu-trex:1.2
+      image: ubuntu-trex:1.1
       mgmt-ipv4: 172.20.99.11
       binds: 
         - trex/trex01/trex_cfg.yaml:/etc/trex_cfg.yaml
 
     ubtrex02:
       kind: linux
-      image: ubuntu-trex:1.2
+      image: ubuntu-trex:1.1
       mgmt-ipv4: 172.20.99.12
       binds: 
         - trex/trex02/trex_cfg.yaml:/etc/trex_cfg.yaml
